@@ -2,8 +2,180 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Justice - ZSTU</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="js/vendor/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<nav class="fixed-header menu-smint" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="" href="#justice" class="">Justice</a>
+        <ul class="right ">
+            <li><a href="#about"  class="subNavBtn">О курсе</a></li>
+            <li><a href="#teacher"  class="subNavBtn">Преподаватель</a></li>
+            <li><a href="#student"  class="subNavBtn">Учасники</a></li>
+            <li><a href="#register"  class="subNavBtn">Регистрация</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="section header-photo justice">
+    <div class="container row">
+        <div class="col s12 m12">
+            <h1 class="center white-text">
+                <div class="center">
+                    <span class="">
+                        Justice
+                    </span>
+                </div>
+            </h1>
+            <div class="center padding">
+                <h5 class="light white-text">
+                    Какойто просто Афигительный SEO текстик... Прочитал - заплакал - зарегестрировался на курс!
+                </h5>
+            </div>
+            <div class="center">
+                <a href="#register" class="waves-effect waves-light btn-large">Зарегестрироваться!</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section grey lighten-3 about">
+    <div class="container row">
+        <div class="col s12 m6">
+            <h3>О курсе</h3>
+            <div>
+                Лучший курс в мире по философии - уже в вашем университете!
+                Хотите приподняться над уровнем троллей в соцсетях? Хотите понять, стоит отменить призыв в армию, разрешать ли геям жениться и нужно ли гражданским оружие? Если вам нужны глубокие ответы на сложные вопросы - записывайтесь и приходите на курс "Справедливость" от профессора Гарварда Майкла Сэнедла!
+            </div>
+        </div>
+        <div class="col s12 m6">
+            <h3>Как это будет</h3>
+            <div>
+                Основой курса являются материалы онлайн-курса <a target="_blank" href="https://www.edx.org/course/justice-harvardx-er22-1x-0">JusticeX</a>. Курс будет проходить в формате <span class="selected">"перевернутого класса" </span>: дома студенты смотрят видео и выполняют задания на EdX, а в аудитории мы обсуждаем оставшиеся вопросы и выполняем практические задания.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section teacher">
+    <h2 class="center">
+        <a target="_blank" href="https://www.facebook.com/ekartem">
+            АРТЕМ СЕРДЮК
+        </a>
+    </h2>
+     <div class="container row">
+         <div class="col s12 m6">
+             <img width="100%" src="img/ArtemSerdyuk.png">
+
+         </div>
+         <div class="col s12 m6">
+             <span>CПІВЗАСНОВНИК В EFFECTCUP.COM ТА EDUMETER.COM.UA</span>
+             <p>
+                 Product Owner і менеджер проектів в ISM Ukraine( easygenerator.com, prevolio.com.). Тренер по гнучкими методологіям в ScrumGuides. Консультував ряд компаній на предмет впровадження Scrum / XP / Lean Software Development. Викладач з 9-ти річним стажем. З 2013-го читає курси в Bionic University. Доповідач конференцій із гнучкої розробки: AgileEasterEurope, AgileBaseCamp, PM Camp. Вірить, що Agile - кращий підхід до розробки програм, а самоорганізована команда однодумців - кращий спосіб для розумних людей працювати разом.
+             </p>
+         </div>
+     </div>
+</div>
+<div class="section grey lighten-3 student">
+    <h2 class="center">Они уже зарегестрировались! А Вы?</h2>
+    <div class="collection">
+        <!--ko foreach: students-->
+        <a target="_blank" class="collection-item" data-bind="attr: { href : fb},text:name"></a>
+        <!--/ko-->
+    </div>
+</div>
+<div class="section register" style="background-color: rgb(30,46,52)"  id="register">
+    <h2 class="center">Регистрация</h2>
+    <iframe class="center" src="https://docs.google.com/forms/d/1fkb1fe9brUhVj1F39mSfU_S_a21hcEUbh6njN8M2c4A/viewform?embedded=true" width="100%" height="1400px" frameborder="0" marginheight="0" marginwidth="0">Завантаження...</iframe>
+    <div class="center">
+    <a target="_blank" class="center" href="https://docs.google.com/forms/d/1fkb1fe9brUhVj1F39mSfU_S_a21hcEUbh6njN8M2c4A/viewform?c=0&w=1">Открыть форму регистрации в новом окне</a>
+        </div>
+</div>
+
+<script type="text/javascript" src="js/vendor/jquery/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/vendor/materialize/js/materialize.min.js"></script>
+<script>
+    (function($){
+        $(function(){
+
+            $('.button-collapse').sideNav();
+
+        }); // end of document ready
+    })(jQuery); // end of jQuery name space
+</script>
+<script type="text/javascript" src="js/vendor/smint/js/jquery.smint.js"></script>
+<script>
+    $(document).ready( function() {
+        $('.menu-smint').smint({
+            'scrollSpeed' : 500
+        });
+    });
+</script>
+<script type="text/javascript" src="js/vendor/knockoutjs/knockout-3.3.0.js"></script>
+<script>
+    var data = [
+        {
+            name: 'Александр Котвицкий',
+            fb: 'https://www.facebook.com/profile.php?id=100006570826288'
+        },
+        {
+            name: 'Настя Бойко',
+            fb: 'https://www.facebook.com/aanaanaas'
+        },
+        {
+            name: 'Гладышко Дмитрий',
+            fb: 'https://www.facebook.com'
+        },
+        {
+            name: 'Бліндарук Тетяна',
+            fb: 'https://www.facebook.com/tania.blindaruk'
+        },
+        {
+            name: 'Андрій Венедчук',
+            fb: 'facebook.com/Venedchuk'
+        },
+        {
+            name: 'Юлия Музычук',
+            fb: 'https://www.facebook.com/profile.php?id=100007757261042'
+        },
+        {
+            name: 'Максим	Новик',
+            fb: 'https://www.facebook.com/maxcimohka'
+        },
+        {
+            name: 'Дима Трохлеб',
+            fb: 'https://www.facebook.com/profile.php?id=100007075307609'
+        },
+        {
+            name: 'Александр Галанин',
+            fb: 'https://www.facebook.com/profile.php?id=100007913208400'
+        },
+        {
+            name: 'Овакимян Армине',
+            fb: 'https://www.facebook.com/'
+        },
+        {
+            name: 'Юлия Вакульчук',
+            fb: 'https://www.facebook.com/profile.php?id=100003846928043'
+        },
+        {
+            name: 'Алексей Биляченко',
+            fb: 'https://www.facebook.com/profile.php?id=100007812167533'
+        },
+        {
+            name: 'Кравчук Александр',
+            fb: 'https://www.facebook.com/alexandr.kravchuk.98'
+        }
+    ]
+</script>
+<script>
+    function ViewModel(students){
+        var self = this;
+        debugger;
+        self.students = students;
+    }
+    ko.applyBindings(ViewModel(data));
+</script>
 
 </body>

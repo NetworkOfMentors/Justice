@@ -1,0 +1,41 @@
+.header-photo{
+    background: url('../img/course.jpg') ;
+    padding: 100px 0 50px 0;
+}
+.justice-button{
+    background: #82b440;
+    padding: 0px 40px;
+}
+.fixed-header{
+    position: fixed;
+    background: rgba(0,0,0,1);
+}
+.teacher-photo{
+    background: url("../img/ArtemSerdyuk.png");
+}
+
+@media only screen and (min-width : 1100px) {
+    .container {
+        width: 98%;
+    }
+}
+body{
+    font-family: 'PT Serif', serif !important;
+    font-size: 1.3em;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+}
+.padding{
+    padding: 30px 0;
+}
+
+.section{
+    padding: 50px 0;
+}
+span.selected{
+    font-weight: bold;
+}
+.menu-smint{
+    z-index: 100000;
+}
