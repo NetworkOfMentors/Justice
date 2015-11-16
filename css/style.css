@@ -42,7 +42,3 @@ span.selected{
 .menu-smint{
     z-index: 100000;
 }
-.btn, .btn-large, .btn-flat{
-    text-transform: none;
-    font-weight: bold;
-}
