@@ -23,7 +23,7 @@
 }
 body{
     font-family: 'Roboto', sans-serif !important;
-    font-size: 1.3em;
+    /*font-size: 1.3em;*/
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'PT Serif', serif; !important;
@@ -41,4 +41,8 @@ span.selected{
 }
 .menu-smint{
     z-index: 100000;
+}
+.btn, .btn-large, .btn-flat{
+    text-transform: none;
+    font-weight: bold;
 }

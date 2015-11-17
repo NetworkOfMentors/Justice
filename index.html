@@ -16,7 +16,7 @@
         <ul class="right ">
             <li><a href="#about"  class="subNavBtn">О курсе</a></li>
             <li><a href="#teacher"  class="subNavBtn">Преподаватели</a></li>
-            <li><a href="#student"  class="subNavBtn">Учасники</a></li>
+            <li><a href="#calendar"  class="subNavBtn">Расписание</a></li>
             <li><a href="#register"  class="subNavBtn">Регистрация</a></li>
         </ul>
     </div>
@@ -65,71 +65,69 @@
     </div>
 </div>
 <div class="section teacher">
-    <h2 class="center">
-        Преподаватели
-    </h2>
     <div class="container">
         <div class="row">
-            <div class="col s12 m2">
-                <img width="100%" src="img/МайклСендел.jpg">
-            </div>
-            <div class="col s12 m10">
-                <h4>
-                    <a target="_blank" href="http://www.mann-ivanov-ferber.ru/authors/michael-sandel/">
-                        Майкл Сэндел
-                    </a>
-                </h4>
-                Философ, политолог, профессор Гарвардского университета. По приглашению преподавал в Сорбонне, выступал с лекциями о человеческих ценностях в Оксфордском университете. Его книги переведены на 18 языков, а лекции о справедливости (www.JusticeHarvard.org) пользуются большой популярностью в Сети и транслируются по телевидению во всем мире.
-                </p>
-            </div>
-        </div>
+            <div class="col s12 m6">
+                <h2 class="">
+                    Преподаватели
+                </h2>
+                <div class="row">
+                    <div class="col s12 m4 ">
+                        <img width="100%" src="img/МайклСендел.jpg">
+                    </div>
+                    <div class="col s12 m8">
+                        <h4 class="">
+                            <a target="_blank" href="http://www.mann-ivanov-ferber.ru/authors/michael-sandel/">
+                                Майкл Сэндел
+                            </a>
+                        </h4>
+                        Философ, политолог, профессор Гарвардского университета. По приглашению преподавал в Сорбонне, выступал с лекциями о человеческих ценностях в Оксфордском университете. Его книги переведены на 18 языков, а лекции о справедливости (www.JusticeHarvard.org) пользуются большой популярностью в Сети и транслируются по телевидению во всем мире.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m4">
+                        <img width="100%" src="img/ArtemSerdyuk.png">
+                    </div>
+                    <div class="col s12 m8">
+                        <h4 class="">
+                            <a target="_blank" href="https://www.facebook.com/ekartem">
+                                Артем Сердюк
+                            </a>
+                        </h4>
+                        Преподаватель с 9-ти летним стажем. С 2014-го года читает курсы в Киево-Могилянской бизнес-школе . Докладчик международных конференций по гибкой разработке: AgileEasterEurope, AgileBaseCamp, PM Day. Верит в то, что философия должна быть прикладной и готов это доказать.
 
-        <div class="row">
-            <div class="col s12 m2">
-                <img width="100%" src="img/ArtemSerdyuk.png">
+                    </div>
+                </div>
             </div>
-            <div class="col s12 m10">
-                <h4>
-                    <a target="_blank" href="https://www.facebook.com/ekartem">
-                        Артем Сердюк
-                    </a>
-                </h4>
-                Преподаватель с 9-ти летним стажем. С 2014-го года читает курсы в Киево-Могилянской бизнес-школе . Докладчик международных конференций по гибкой разработке: AgileEasterEurope, AgileBaseCamp, PM Day. Верит в то, что философия должна быть прикладной и готов это доказать.
-
+            <div class="col s12 m6">
+                <h2 class="">
+                    Студенты
+                </h2>
+                <div class="collection">
+                    <!--ko foreach: students-->
+                    <a target="_blank" class="collection-item" data-bind="attr: { href : fb},text:name"></a>
+                    <!--/ko-->
+                </div>
             </div>
         </div>
     </div>
 </div>
-<div class="section grey lighten-3 student">
-    <h2 class="center">Уже зарегистрировались</h2>
-    <div class="collection">
-        <!--ko foreach: students-->
-        <a target="_blank" class="collection-item" data-bind="attr: { href : fb},text:name"></a>
-        <!--/ko-->
+
+<div class="section calendar grey lighten-3">
+    <div class="container row">
+        <h2 class="center">Расписание</h2>
+        <div class="col s12">
+            <iframe src="https://calendar.google.com/calendar/embed?src=1rpjclfp1genaavd6npkv5gfpc%40group.calendar.google.com&ctz=Europe/Kiev" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
     </div>
 </div>
-<!--<div class="section calendar">-->
-    <!--<div class="container row">-->
-        <!--<h2 class="center">Расписание</h2>-->
-        <!--<div class="col s12 m6">-->
-            <!--<iframe src="https://calendar.google.com/calendar/embed?src=1rpjclfp1genaavd6npkv5gfpc%40group.calendar.google.com&ctz=Europe/Kiev" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>-->
-        <!--</div>-->
-        <!--<div class="col s12 m6">-->
-            <!--<div data-width="100" class="fb-page" data-href="https://www.facebook.com/facebook" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div></div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
 <div class="section register grey lighten-3" style=""  id="register">
     <h2 class="center">Регистрация</h2>
     <iframe class="center" src="https://docs.google.com/forms/d/1fkb1fe9brUhVj1F39mSfU_S_a21hcEUbh6njN8M2c4A/viewform?embedded=true" width="100%" height="1700px" frameborder="0" marginheight="0" marginwidth="0">Завантаження...</iframe>
     <div class="center">
     <a target="_blank" class="center" href="https://docs.google.com/forms/d/1fkb1fe9brUhVj1F39mSfU_S_a21hcEUbh6njN8M2c4A/viewform?c=0&w=1">Открыть форму регистрации в новом окне</a>
         </div>
-    <style>
-        .ss-base-body{
-            /*background-color: rgb(238, 238, 238) !important;*/
-        }
-    </style>
 </div>
 
 <script type="text/javascript" src="js/vendor/jquery/jquery-2.1.4.js"></script>
@@ -227,7 +225,6 @@
 <script>
     function ViewModel(students){
         var self = this;
-        debugger;
         self.students = students;
     }
     ko.applyBindings(ViewModel(data));
